@@ -1,43 +1,24 @@
 \documentclass[11pt]{article}
-
-\usepackage{./commonheader}
+\usepackage{commonheader}
+\hypersetup{pdftitle={Liam Earle - Software Engineering Resume},pdfauthor={Liam Earle}}
 
 \begin{document}
 
-\subimport{./}{background.tex}
+\input{background}
 
 \resumesection{Experience}
-
-\subimport{experiences/}{amazon.tex}
-
-\subimport{experiences/}{omascan.tex}
-
-\subimport{experiences/}{bluedrop.tex}
-
-% \subimport{experiences/}{memorialbaja.tex}
-
-% \subimport{experiences/}{paradigm.tex}
-
-% \subimport{experiences/}{munstar.tex}
-
-% \subimport{experiences/}{retrievium.tex}
-
-% \subimport{experiences/}{lfest.tex}
+\input{experiences/amazon}
+\input{experiences/omascan}
+\input{experiences/bluedrop}
 
 \resumesection{Projects}
+\input{experiences/memorialbaja}
+\input{projects/copper}
 
-\subimport{projects/}{copper.tex}
+\resumesection{Technical Skills}
+\input{skills}
 
 \resumesection{Education}
-
-\subimport{education/}{education.tex}
-
-\resumesection{Skills}
-
-\subimport{./}{skills.tex}
-
-% \resumesection{\emoji{trophy} Awards}
-
-% \subimport{awards/}{awards.tex}
+\input{education/education}
 
 \end{document}
